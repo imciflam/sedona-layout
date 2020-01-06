@@ -9,7 +9,7 @@
       <a class="page-header__logo">
         <img
           class="page-header__logo-image"
-          src=""
+          src="/"
           width="226"
           height="30"
           alt="Седона"
@@ -31,21 +31,23 @@
     </header>
     <main class="form">
       <section class="form-preview">
-        <b class="form-preview__title">Оставьте свой отзыв</b>
+        <h2 class="form-preview__title">Оставьте свой отзыв</h2>
         <p class="form-preview__description">
           Помогите нашим отелям сталь лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
       </section>
       <section class="main-form">
+        <h2 class="visually-hidden">Главная форма опроса</h2>
         <section class=" greeting-block">
-          <p class="main-form-title greeting-block__title">Представьтесь</p>
+          <h2 class="main-form-title greeting-block__title">Представьтесь</h2>
           <ul class="greeting-block__user-information-list">
             <li class="greeting-block__user-information-item">
               <label for="greeting-block__name">Имя*:</label>
               <input
                 type="text"
                 class="greeting-block__name"
+                id="greeting-block__name"
                 placeholder="Петр"
               />
             </li>
@@ -54,6 +56,7 @@
               <input
                 type="text"
                 class="greeting-block__surname"
+                id="greeting-block__surname"
                 placeholder="Иванов"
               />
             </li>
@@ -62,38 +65,43 @@
               <input
                 type="text"
                 class="greeting-block__family-name"
+                id="greeting-block__family-name"
                 placeholder="Александрович"
               />
             </li>
           </ul>
         </section>
-        <section class=" contact-block">
-          <p class="contact-block main-form-title">Контактная информация</p>
+        <section class="contact-block">
+          <h2 class="contact-block main-form-title">Контактная информация</h2>
           <ul class="contact-block__list">
             <li class="contact-block__item">
-              <label for="contact-block__input contact-block__input--phone"
+              <label for="contact-block__input--phone"
                 >Контактный телефон*:</label
               >
               <input
                 type="text"
                 class="contact-block__input contact-block__input--phone"
+                id="contact-block__input--phone"
                 placeholder="Введите телефон"
               />
             </li>
             <li class="contact-block__item">
-              <label for="contact-block__input contact-block__input--email"
+              <label for="contact-block__input--email"
                 >Электронная почта*:</label
               >
               <input
                 type="text"
                 class="contact-block__input contact-block__input--email"
+                id="contact-block__input--email"
                 placeholder="Введите e-mail"
               />
             </li>
           </ul>
         </section>
-        <section class=" impression-block">
-          <p class="main-form-title impression-block">Ваше общее впечатление</p>
+        <section class="impression-block">
+          <h2 class="main-form-title impression-block">
+            Ваше общее впечатление
+          </h2>
           <ul class="impression-block__list">
             <li class="impression-block__item">
               <input
@@ -122,9 +130,9 @@
           </ul>
         </section>
         <section class="visited-sights-block">
-          <p class="main-form-title visited-sights-block__title">
+          <h2 class="main-form-title visited-sights-block__title">
             Посещенные достопримечательности:
-          </p>
+          </h2>
           <ul class="visited-sights-block__list">
             <li class="visited-sights-block__item">
               <input
@@ -161,13 +169,13 @@
           </ul>
         </section>
         <section class="emotions-block">
-          <p class="main-form-title emotions-block__title">
+          <h2 class="main-form-title emotions-block__title">
             Опишите свои эмоции
-          </p>
-          <label for="emotions-block__input"></label>
+          </h2>
           <input
             type="text"
             class="emotions-block__input"
+            id="emotions-block__input"
             placeholder="Опишите подробно все свои восторги"
           />
         </section>
