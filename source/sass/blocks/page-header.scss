@@ -10,9 +10,11 @@
   height: 54px;
   padding: 0;
   margin: 0;
-  background-image: url("../img/logotyle-mobile.png");
-  background-repeat: no-repeat;
-  z-index: 3;
+}
+
+.page-header__sticky-logo-image {
+  position: fixed;
+  left: 110px;
 }
 
 .page-header__logo-image {
