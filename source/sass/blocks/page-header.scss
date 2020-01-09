@@ -1,5 +1,18 @@
+@import "../variables.scss";
+
 .page-header {
   background: white;
+  width: 320px;
+}
+
+.page-header--burger-wrapper {
+  background-position: center;
+  height: 54px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/logotyle-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .page-header__logo-image {
@@ -20,7 +33,7 @@
 
 .page-header__item {
   width: 320px;
-  background-color: #81b3d2;
+  background-color: $baby-blue;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
