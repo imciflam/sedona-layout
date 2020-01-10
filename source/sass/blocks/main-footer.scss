@@ -16,10 +16,17 @@
 }
 
 .social__item {
-  margin: 5px;
+  position: relative;
+  margin: 2px;
   width: 46px;
   height: 48px;
   background-color: $baby-blue;
   cursor: pointer;
   overflow: hidden;
+  text-align: center;
+}
+
+.social__link svg {
+  height: 100%;
+  fill: #ffffff;
 }
