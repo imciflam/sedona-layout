@@ -13,13 +13,8 @@
 }
 
 .page-header__sticky-logo-image {
-  position: fixed;
+  position: absolute;
   left: 110px;
-}
-
-.page-header__logo-image {
-  width: 320px;
-  height: 389px;
 }
 
 .main-nav__toggle {

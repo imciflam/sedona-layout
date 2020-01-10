@@ -1,5 +1,5 @@
-@import "./blocks/header.scss";
 @import "./blocks/page-header.scss";
+@import "./blocks/intro.scss";
 
 body {
   background: #ffffff;
@@ -10,4 +10,8 @@ body {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+.visually-hidden {
+  display: none;
 }
