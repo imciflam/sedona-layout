@@ -18,6 +18,22 @@
   position: absolute;
   left: 110px;
   top: 0;
+  z-index: 1;
+}
+
+.intro__logo-image {
+  position: relative;
+}
+
+.intro__logo-image-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 210px;
 }
 
 .main-nav__toggle {
@@ -38,9 +54,11 @@
   text-align: center;
   text-transform: uppercase;
   padding: 20px 0;
-  font-size: 18px;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
+  font-size: 18px;
+  font-family: "PT Sans", serif;
+  font-weight: bold;
 }
 
 .page-header--burger-wrapper {
