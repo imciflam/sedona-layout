@@ -1,10 +1,17 @@
 @import "./blocks/page-header.scss";
 @import "./blocks/intro.scss";
 
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+}
+
 body {
   background: #ffffff;
   margin: 0;
   padding: 0;
+  font-family: "PT Sans", serif;
 }
 
 a {
@@ -14,4 +21,15 @@ a {
 
 .visually-hidden {
   display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
 }
