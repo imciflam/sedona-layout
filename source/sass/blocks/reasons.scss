@@ -16,7 +16,7 @@
 }
 
 .reasons__list {
-  background-color: $baby-blue;
+  background-color: #ffffff;
   color: white;
   font-size: 10px;
 }
@@ -25,7 +25,44 @@
   line-height: 2;
 }
 
+.reason__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .reasons__container {
+  background-color: $baby-blue;
   text-align: center;
   padding: 40px 25px;
+  margin: 0;
+}
+
+.reason__number {
+  padding: 20px;
+}
+
+.reasons__advantages-list {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.advantages__item {
+  padding: 20px 70px 20px 40px;
+}
+
+.advantages__item:last-child {
+  padding-bottom: 40px;
+}
+
+.reasons__container--disabled {
+  background-color: #eeeeee;
+  color: black;
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.reasons__main-image {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
