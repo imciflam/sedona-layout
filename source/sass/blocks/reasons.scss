@@ -22,6 +22,7 @@
 }
 
 .reason__item {
+  background-color: #eeeeee;
   line-height: 2;
 }
 
@@ -65,4 +66,11 @@
   margin: 0;
   padding: 0;
   line-height: 0;
+}
+
+.reason__line-break {
+  border: 0;
+  height: 1px;
+  background-color: #d6d6d6;
+  margin: 0 10%;
 }
