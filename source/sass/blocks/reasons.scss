@@ -1,0 +1,31 @@
+.reasons__summary-title {
+  font-size: 13px;
+  padding: 40px 30px 20px 30px;
+  margin: 0;
+  text-align: center;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.reasons__summary {
+  font-size: 10px;
+  padding: 20px 30px 40px 30px;
+  margin: 0;
+  text-align: center;
+  line-height: 2;
+}
+
+.reasons__list {
+  background-color: $baby-blue;
+  color: white;
+  font-size: 10px;
+}
+
+.reason__item {
+  line-height: 2;
+}
+
+.reasons__container {
+  text-align: center;
+  padding: 40px 25px;
+}
