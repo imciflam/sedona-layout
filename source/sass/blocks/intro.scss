@@ -1,3 +1,5 @@
+@import "../mixins.scss";
+
 .intro__logo-image {
   position: relative;
   background-image: url("../img/back-mobile.jpg");
@@ -14,4 +16,8 @@
   margin: auto;
   width: 280px;
   height: 210px;
+}
+
+.intro__image-triangle {
+  @include triangle-styling;
 }

@@ -1,1 +1,5 @@
 // mixins
+@mixin triangle-styling {
+  position: absolute;
+  bottom: 0;
+}

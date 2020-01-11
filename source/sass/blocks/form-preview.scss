@@ -4,9 +4,15 @@
 }
 
 .form-preview__image {
+  position: relative;
   background-image: url("../img/back-mobile.jpg");
   width: 320px;
   height: 389px;
+}
+
+.form-preview__image-triangle {
+  position: absolute;
+  bottom: 0;
 }
 
 .form-preview__text-wrapper {
