@@ -13,10 +13,5 @@
 }
 
 .contact__button {
-  padding: 20px 45px;
-  margin: 40px 0 30px 0;
-  color: #ffffff;
-  background-color: $baby-blue;
-  font-weight: bold;
-  text-transform: uppercase;
+  @include button-mixin;
 }
