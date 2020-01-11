@@ -1,0 +1,15 @@
+.form__divider {
+  border: 0;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.form__button-wrapper {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.form__button {
+  @include button-mixin;
+}

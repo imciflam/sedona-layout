@@ -1,0 +1,23 @@
+@import "../mixins.scss";
+
+.intro__logo-image {
+  position: relative;
+  background-image: url("../img/back-mobile.jpg");
+  width: 320px;
+  height: 389px;
+}
+
+.intro__logo-image-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 210px;
+}
+
+.intro__image-triangle {
+  @include triangle-styling;
+}
