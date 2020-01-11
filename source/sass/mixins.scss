@@ -3,3 +3,10 @@
   position: absolute;
   bottom: 0;
 }
+
+@mixin form-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 24px;
+}
