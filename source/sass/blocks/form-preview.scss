@@ -8,11 +8,22 @@
   background-image: url("../img/back-mobile.jpg");
   width: 320px;
   height: 389px;
+  margin-top: -230px;
+  z-index: -1;
 }
 
 .form-preview__image-triangle {
   position: absolute;
   bottom: 0;
+}
+
+.form-preview__image-sedona {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -115px;
+  top: 80%;
+  margin-top: -20px;
 }
 
 .form-preview__text-wrapper {
