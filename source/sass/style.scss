@@ -5,6 +5,8 @@
 @import "./blocks/contact.scss";
 @import "./blocks/map.scss";
 @import "./blocks/main-footer.scss";
+@import "./blocks/form-preview.scss";
+@import "./blocks/greeting-block.scss";
 
 @font-face {
   font-family: "PT Sans";
@@ -66,4 +68,8 @@ img {
 hr {
   margin: 0;
   padding: 0;
+}
+
+main {
+  width: 320px;
 }
