@@ -48,61 +48,76 @@
             alt="Welcome to Sedona"
           />
         </div>
-        <h2 class="gallery-preview__title">Фото и видео</h2>
-        <p class="gallery-preview__description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
-        </p>
+        <div class="gallery-preview__text-wrapper">
+          <h2 class="gallery-preview__title">Фото и видео</h2>
+          <p class="gallery-preview__description">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+        </div>
       </section>
+      <hr class="gallery__divider" />
       <ul class="gallery__list">
         <li class="gallery__item">
           <img
             class="gallery__photo"
-            src="/"
-            width="200"
-            height="200"
+            src="img/photo-1-mobile.jpg"
+            width="280"
+            height="280"
             alt="Неродные просторы"
           />
-          <b class="gallery__photo-name">Неродные просторы</b>
-          <p class="gallery__author">Автор фото: Борис</p>
-          <p class="gallery__likes">1350</p>
+          <div class="gallery__photo-description">
+            <b class="gallery__photo-name">Неродные просторы</b>
+            <p class="gallery__author">Автор фото: Борис</p>
+            <p class="gallery__likes">1350</p>
+          </div>
         </li>
+        <hr class="gallery__divider" />
         <li class="gallery__item">
           <img
             class="gallery__photo"
-            src="/"
-            width="200"
-            height="200"
+            src="img/photo-2-mobile.jpg"
+            width="280"
+            height="280"
             alt="Местная растительность"
           />
-          <b class="gallery__photo-name">Местная растительность</b>
-          <p class="gallery__author">Автор фото: Сергей</p>
-          <p class="gallery__likes">143</p>
+          <div class="gallery__photo-description">
+            <b class="gallery__photo-name">Местная растительность</b>
+            <p class="gallery__author">Автор фото: Сергей</p>
+            <p class="gallery__likes">143</p>
+          </div>
         </li>
+        <hr class="gallery__divider" />
         <li class="gallery__item">
           <img
             class="gallery__photo"
-            src="/"
-            width="200"
-            height="200"
+            src="img/photo-3-mobile.jpg"
+            width="280"
+            height="280"
             alt="Дорога на север"
           />
-          <b class="gallery__photo-name">Дорога на север</b>
-          <p class="gallery__author">Автор фото: Петр</p>
-          <p class="gallery__likes">96</p>
+          <div class="gallery__photo-description">
+            <b class="gallery__photo-name">Дорога на север</b>
+            <p class="gallery__author">Автор фото: Петр</p>
+            <p class="gallery__likes">96</p>
+          </div>
         </li>
+        <hr class="gallery__divider" />
         <li class="gallery__item">
           <img
             class="gallery__photo"
-            src="/"
-            width="200"
-            height="200"
+            src="img/photo-4-mobile.jpg"
+            width="280"
+            height="280"
             alt="Мост дьявола"
           />
-          <b class="gallery__photo-name">Мост дьявола</b>
-          <p class="gallery__author">Автор фото: Антон</p>
-          <p class="gallery__likes">254</p>
+          <div class="gallery__photo-description">
+            <b class="gallery__photo-name">Мост дьявола</b>
+            <p class="gallery__author">Автор фото: Антон</p>
+            <p class="gallery__likes">254</p>
+          </div>
         </li>
+        <hr class="gallery__divider" />
       </ul>
       <section class="gallery-preview">
         <h2 class="gallery-preview__title">Все еще сомневаетесь?</h2>
@@ -114,10 +129,16 @@
           class="gallery-preview__video"
           src="videofile.ogg"
           autoplay
-          poster="posterimage.jpg"
+          poster="img/video-mobile.jpg"
         >
-          Sorry, your browser doesn't support embedded videos.
-        </video>
+          Sorry, your browser doesn't support embedded videos.</video
+        ><img
+          class="gallery-preview__video-picture"
+          src="img/video.png"
+          width="280"
+          height="280"
+          alt="video"
+        />
       </section>
     </main>
     <footer class="main-footer">
