@@ -8,10 +8,18 @@
   padding: 0;
 }
 
+.site-nav__item--hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .site-nav {
     width: auto;
     flex-direction: row;
     background-color: #ffffff;
+  }
+
+  .site-nav__item--hidden {
+    display: block;
   }
 }

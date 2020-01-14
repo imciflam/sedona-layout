@@ -110,6 +110,15 @@
     background-color: #ffffff;
     color: #000000;
     border: 0;
+    width: calc(100% / 5);
+  }
+
+  .page-header__item--logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: auto;
+    transform: translateX(-50%);
   }
 
   .page-header__button--close,
