@@ -1,0 +1,17 @@
+.site-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    width: auto;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+}
