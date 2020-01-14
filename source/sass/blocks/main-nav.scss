@@ -1,0 +1,25 @@
+.main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 695px;
+    margin: 0 auto;
+  }
+
+  .page-header__list {
+    width: 100%;
+    // for net
+    min-height: 56px;
+  }
+}
