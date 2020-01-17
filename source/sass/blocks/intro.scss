@@ -21,3 +21,43 @@
 .intro__image-triangle {
   @include triangle-styling;
 }
+
+@media (min-width: $tablet-width) {
+  .intro__logo-image {
+    position: relative;
+    background-image: url("../img/back-tablet.jpg");
+    width: auto;
+    height: 510px;
+  }
+
+  .intro__logo-image-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__logo-image {
+    position: relative;
+    background-image: url("../img/back-desktop.jpg");
+    width: auto;
+    height: 520px;
+  }
+
+  .intro__logo-image-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 460px;
+    height: 350px;
+  }
+}

@@ -4,3 +4,10 @@
   text-transform: uppercase;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: auto;
+    margin: 0 auto;
+  }
+}
