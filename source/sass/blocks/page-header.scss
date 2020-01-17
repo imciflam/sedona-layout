@@ -89,9 +89,11 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background: #ffffff;
+    z-index: 2;
   }
 
   .page-header__list {
+    z-index: 2;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -120,7 +122,4 @@
   .page-header__button--burger {
     display: none;
   }
-}
-
-@media (min-width: $desktop-width) {
 }

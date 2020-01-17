@@ -1,11 +1,13 @@
 .main-nav {
   position: relative;
+  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
     margin: 0;
+    background-color: #ffffff;
   }
 
   .main-nav__wrapper {

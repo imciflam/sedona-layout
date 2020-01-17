@@ -13,3 +13,10 @@
 .form__button {
   @include button-mixin;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: auto;
+    margin: 0 auto;
+  }
+}
