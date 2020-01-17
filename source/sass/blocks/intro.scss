@@ -22,6 +22,7 @@
 
 .intro__image-triangle {
   @include triangle-styling;
+  margin-bottom: -1px; // only for some devices - to avoid thin line, may delete later
   height: 57px;
   width: 100%;
   min-width: 320px;

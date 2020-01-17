@@ -60,3 +60,9 @@ hr {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  hr {
+    display: none;
+  }
+}
