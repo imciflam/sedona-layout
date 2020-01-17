@@ -83,4 +83,23 @@
 .reasons__image-triangle {
   position: absolute;
   top: 0;
+  height: 57px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/white_copy.png");
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__image-triangle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__image-triangle {
+    display: none;
+  }
 }
