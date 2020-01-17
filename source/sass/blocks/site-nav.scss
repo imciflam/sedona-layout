@@ -1,0 +1,24 @@
+.site-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__item--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+
+  .site-nav__item--hidden {
+    display: block;
+  }
+}

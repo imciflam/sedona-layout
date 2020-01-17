@@ -3,7 +3,7 @@
 }
 
 .reasons__summary-title {
-  font-size: 13px;
+  font-size: 18px;
   padding: 40px 30px 20px 30px;
   margin: 0;
   text-align: center;
@@ -12,7 +12,7 @@
 }
 
 .reasons__summary {
-  font-size: 10px;
+  font-size: 14px;
   padding: 20px 30px 40px 30px;
   margin: 0;
   text-align: center;
@@ -23,7 +23,7 @@
   position: relative;
   background-color: #ffffff;
   color: white;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .reason__item {
@@ -52,6 +52,10 @@
   color: #000000;
 }
 
+.reasons__advantages-list--grey {
+  background-color: #eeeeee;
+}
+
 .advantages__item {
   padding: 20px 70px 20px 40px;
 }
@@ -64,13 +68,25 @@
   background-color: #eeeeee;
   color: black;
   text-align: center;
-  padding: 40px 25px;
+  // padding: 40px 25px;
 }
 
 .reasons__main-image {
+  width: 100%;
+  height: 280px;
   margin: 0;
   padding: 0;
   line-height: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.reasons__main-image--city {
+  background-image: url("../img/photo-city@2x.jpg");
+}
+
+.reasons__main-image--bridge {
+  background-image: url("../img/photo-bridge@2x.jpg");
 }
 
 .reason__line-break {
@@ -83,4 +99,52 @@
 .reasons__image-triangle {
   position: absolute;
   top: 0;
+  height: 57px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/white_copy.png");
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__image-triangle {
+    display: none;
+  }
+
+  .reason__point-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .reasons__main-image {
+    flex-grow: 2;
+  }
+
+  .reasons__container--reverse {
+    order: 2;
+  }
+
+  .reasons__advantages-list,
+  .reasons__advantages-list--grey {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    padding: 60px 50px;
+    text-align: center;
+  }
+
+  .advantages__item:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__image-triangle {
+    display: none;
+  }
 }

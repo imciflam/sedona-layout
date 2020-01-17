@@ -2,13 +2,21 @@
 @mixin triangle-styling {
   position: absolute;
   bottom: 0;
+  margin-bottom: -1px; // only for some devices - to avoid thin line, may delete later
+  height: 57px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  background-image: url("../img/intro-triangle.png");
+  background-size: cover;
+  background-position: center;
 }
 
 @mixin form-title {
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  padding: 24px;
+  min-width: 300px;
 }
 
 @mixin button-mixin {

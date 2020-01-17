@@ -9,10 +9,21 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-header__nav main-nav">
           <div class="main-nav__wrapper">
             <button class="page-header__button--burger"></button>
-            <ul class="page-header__list">
+            <ul class="page-header__list site-nav">
+              <li class="page-header__item page-header__item--logo">
+                <a class="page-header__item-link page-header__item--logo-link">
+                  <object
+                    class="page-header__logo-image"
+                    type="image/svg+xml"
+                    data="img/logotyle-mobile.svg"
+                  >
+                    Your browser does not support SVG
+                  </object></a
+                >
+              </li>
               <li class="page-header__item">
                 <a class="page-header__link" href="./index.html">Главная</a>
                 <button class="page-header__button--close"></button>
@@ -22,19 +33,12 @@
                   >Фото и видео</a
                 >
               </li>
+              <li class="page-header__item site-nav__item--hidden"></li>
               <li class="page-header__item">
                 <a class="page-header__link" href="./form.html">Форма отзыва</a>
               </li>
               <li class="page-header__item">
-                <div class="page-header--logo-wrapper">
-                  <object
-                    class="page-header__logo-image"
-                    type="image/svg+xml"
-                    data="img/logotyle-mobile.svg"
-                  >
-                    Your browser does not support SVG
-                  </object>
-                </div>
+                <a class="page-header__link" href="./index.html">Информация</a>
               </li>
             </ul>
           </div>
@@ -51,11 +55,8 @@
               class="intro__logo-image-text"
               src="img/text-index.png"
               alt="Welcome to Sedona"
-            /><img
-              class="intro__image-triangle"
-              src="img/intro-triangle.png"
-              alt="Welcome to Sedona"
             />
+            <div class="intro__image-triangle"></div>
           </div>
         </section>
         <section class="reasons">
@@ -68,26 +69,20 @@
             </p>
           </div>
           <ul class="reasons__list">
-            <img
-              class="reasons__image-triangle"
-              src="img/white_copy.png"
-              alt="Welcome to Sedona"
-            />
+            <div class="reasons__image-triangle"></div>
             <li class="reason__item">
-              <div class="reasons__container">
-                <b class="reason__slogan">Настоящий городок</b>
-                <p class="reason__number">- №1 -</p>
-                <p class="reason_description">
-                  Седона - не аттракцион для туристов, там течет своя жизнь
-                </p>
+              <div class="reason__point-wrapper">
+                <div class="reasons__container">
+                  <b class="reason__slogan">Настоящий городок</b>
+                  <p class="reason__number">- №1 -</p>
+                  <p class="reason_description">
+                    Седона - не аттракцион для туристов, там течет своя жизнь
+                  </p>
+                </div>
+                <div
+                  class="reasons__main-image reasons__main-image--city"
+                ></div>
               </div>
-              <img
-                class="reasons__main-image"
-                src="img/photo-city@1x.jpg"
-                width="320"
-                height="260"
-                alt="Иллюстрация причин посещения Седоны"
-              />
               <ul class="reasons__advantages-list">
                 <li class="advantages__item advantages__item--housing ">
                   <h3 class="advantages__title">Жилье</h3>
@@ -110,49 +105,51 @@
               </ul>
             </li>
             <li class="reason__item">
-              <div class="reasons__container">
-                <b class="reason__slogan">Там есть мост дьявола</b>
-                <p class="reason__number">- №2 -</p>
-                <p class="reason_description">
-                  Да, по нему можно пройти! Если вы осмелитесь, конечно
-                </p>
+              <div class="reason__point-wrapper">
+                <div class="reasons__container reasons__container--reverse">
+                  <b class="reason__slogan">Там есть мост дьявола</b>
+                  <p class="reason__number">- №2 -</p>
+                  <p class="reason_description">
+                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                  </p>
+                </div>
+                <div
+                  class="reasons__main-image reasons__main-image--bridge"
+                ></div>
               </div>
-              <img
-                class="reasons__main-image"
-                src="img/photo-bridge@1x.jpg"
-                width="320"
-                height="280"
-                alt="Иллюстрация моста Дьявола"
-              />
             </li>
             <li class="reason__item">
-              <div class="reasons__container--disabled">
-                <b class="reason__slogan">Небольшая площадь</b>
-                <p class="reason__number">- №3 -</p>
-                <p class="reason_description">
-                  Все интересные места находятся очень близко
-                </p>
-              </div>
-              <hr class="reason__line-break" />
-            </li>
-            <li class="reason__item">
-              <div class="reasons__container--disabled">
-                <b class="reason__slogan">Красивая дорога</b>
-                <p class="reason__number">- №4 -</p>
-                <p class="reason_description">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </div>
-              <hr class="reason__line-break" />
-            </li>
-            <li class="reason__item">
-              <div class="reasons__container--disabled">
-                <b class="reason__slogan">Мало туристов</b>
-                <p class="reason__number">- №5 -</p>
-                <p class="reason_description">
-                  Большинство едет в Гранд-Каньон и толпится там
-                </p>
-              </div>
+              <ul class="reasons__advantages-list--grey">
+                <li class="advantages__item">
+                  <div class="reasons__container--disabled">
+                    <b class="reason__slogan">Небольшая площадь</b>
+                    <p class="reason__number">- №3 -</p>
+                    <p class="reason_description">
+                      Все интересные места находятся очень близко
+                    </p>
+                  </div>
+                  <hr class="reason__line-break" />
+                </li>
+                <li class="advantages__item">
+                  <div class="reasons__container--disabled">
+                    <b class="reason__slogan">Красивая дорога</b>
+                    <p class="reason__number">- №4 -</p>
+                    <p class="reason_description">
+                      Ехать в Седону из Лас-Вегаса совсем не скучно!
+                    </p>
+                  </div>
+                  <hr class="reason__line-break" />
+                </li>
+                <li class="advantages__item">
+                  <div class="reasons__container--disabled">
+                    <b class="reason__slogan">Мало туристов</b>
+                    <p class="reason__number">- №5 -</p>
+                    <p class="reason_description">
+                      Большинство едет в Гранд-Каньон и толпится там
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </li>
           </ul>
         </section>
@@ -225,6 +222,7 @@
             </li>
           </ul>
         </div>
+        <p class="main-footer_title">made in 2020</p>
       </footer>
     </div>
   </body>
