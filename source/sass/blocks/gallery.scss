@@ -89,3 +89,46 @@
     object-position: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 10%;
+  }
+
+  .gallery__item {
+    position: relative;
+    width: 33.3%;
+    margin: 0;
+  }
+
+  .gallery__item:first-child {
+    width: 100%;
+  }
+
+  .gallery__photo {
+    padding: 0;
+    width: 100%;
+    height: 267px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .gallery-preview__video {
+    margin: 0 10%;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .gallery__photo-description {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.302);
+    color: #ffffff;
+    z-index: 2;
+  }
+}
