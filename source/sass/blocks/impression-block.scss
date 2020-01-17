@@ -1,3 +1,7 @@
+.impression-block {
+  background-color: #ffffff;
+}
+
 .impression-block__list {
   padding: 0 20px 20px 20px;
 }
@@ -6,4 +10,11 @@
   padding: 20px 0;
   font-weight: bold;
   font-family: "PT Sans", serif;
+}
+
+@media (min-width: $tablet-width) {
+  .impression-block {
+    width: 40%;
+    order: 1;
+  }
 }

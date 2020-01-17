@@ -1,9 +1,12 @@
+.emotions-block {
+  background-color: #ffffff;
+}
+
 .emotions-block__input {
-  padding: 20px;
-  margin: 20px;
   background-color: $input-background;
-  width: 240px;
+  width: 80%;
   height: 160px;
+  margin: 30px 10% 0 10%;
   font-weight: bold;
   font-family: "PT Sans", serif;
   border: none;

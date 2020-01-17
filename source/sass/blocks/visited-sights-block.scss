@@ -1,3 +1,7 @@
+.visited-sights-block {
+  background-color: #ffffff;
+}
+
 .visited-sights-block__list {
   padding: 0 20px 20px 20px;
 }
@@ -6,4 +10,11 @@
   padding: 20px 0;
   font-weight: bold;
   font-family: "PT Sans", serif;
+}
+
+@media (min-width: $tablet-width) {
+  .visited-sights-block {
+    width: 80%;
+    margin: 0 5%;
+  }
 }

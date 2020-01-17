@@ -16,7 +16,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  padding: 24px;
+  min-width: 300px;
 }
 
 @mixin button-mixin {

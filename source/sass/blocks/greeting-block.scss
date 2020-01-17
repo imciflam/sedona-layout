@@ -1,3 +1,7 @@
+.greeting-block {
+  background-color: #ffffff;
+}
+
 .greeting-block__title {
   @include form-title;
 }
@@ -28,4 +32,11 @@
   border: 0;
   font-weight: bold;
   font-family: "PT Sans", serif;
+}
+
+@media (min-width: $tablet-width) {
+  .greeting-block {
+    width: 40%;
+    order: 2;
+  }
 }
