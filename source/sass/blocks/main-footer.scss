@@ -10,25 +10,3 @@
   font-weight: bold;
   text-align: center;
 }
-
-.social__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 85px;
-}
-
-.social__item {
-  position: relative;
-  margin: 2px;
-  width: 46px;
-  height: 48px;
-  background-color: $baby-blue;
-  cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-}
-
-.social__link svg {
-  height: 100%;
-  fill: #ffffff;
-}
