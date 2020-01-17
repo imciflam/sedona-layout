@@ -10,3 +10,19 @@
   font-weight: bold;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .main-footer_title {
+    padding: 0;
+    margin: auto;
+    display: inline;
+    vertical-align: middle;
+  }
+}
