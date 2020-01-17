@@ -1,5 +1,6 @@
 .visited-sights-block {
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .visited-sights-block__list {
@@ -15,6 +16,9 @@
 @media (min-width: $tablet-width) {
   .visited-sights-block {
     width: 80%;
-    margin: 0 5%;
+  }
+
+  .main-form-title.visited-sights-block__title {
+    width: 100%;
   }
 }
