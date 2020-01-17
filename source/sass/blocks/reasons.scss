@@ -68,9 +68,21 @@
 }
 
 .reasons__main-image {
+  width: 100%;
+  height: 280px;
   margin: 0;
   padding: 0;
   line-height: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.reasons__main-image--city {
+  background-image: url("../img/photo-city@2x.jpg");
+}
+
+.reasons__main-image--bridge {
+  background-image: url("../img/photo-bridge@2x.jpg");
 }
 
 .reason__line-break {
@@ -95,6 +107,15 @@
 @media (min-width: $tablet-width) {
   .reasons__image-triangle {
     display: none;
+  }
+
+  .reason__point-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .reasons__main-image {
+    flex-grow: 2;
   }
 }
 
