@@ -11,9 +11,11 @@
 .gallery-preview__description {
   font-size: 14px;
   line-height: 1.5;
+  margin: 0 10% 5% 10%;
 }
 
 .gallery-preview__text-wrapper {
+  background-color: #ffffff;
   padding: 40px 20px;
 }
 
@@ -45,15 +47,18 @@
 }
 
 .gallery-preview__video-wrapper {
-  margin: 30px 0;
-  position: relative;
+  width: 100%;
 }
 
-.gallery-preview__video-picture {
-  position: absolute;
-  bottom: 0;
-  left: 6.25%;
-  width: 87.5%;
+.gallery-preview__video {
+  margin: 0 10%;
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-preview__image-triangle {
+  @include triangle-styling;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,6 +124,7 @@
 
   .gallery-preview__video {
     margin: 0 10%;
+    height: 570px;
     width: 80%;
     object-fit: cover;
     object-position: center;
@@ -130,5 +136,9 @@
     background-color: rgba(0, 0, 0, 0.302);
     color: #ffffff;
     z-index: 2;
+  }
+
+  .gallery-preview__description {
+    margin: 0 10% 5% 10%;
   }
 }
