@@ -8,8 +8,10 @@
     margin: 0;
   }
 
-  .main-header__wrapper {
+  .main-nav__wrapper {
+    display: flex;
     width: 715px;
+    justify-content: space-between;
     margin: 0 auto;
   }
 
@@ -17,5 +19,12 @@
     width: 100%;
     // for net
     min-height: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1040px;
+    margin: 0 auto;
   }
 }
