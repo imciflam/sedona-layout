@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+}
+
+body {
+  background: $input-background;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", serif;
+  min-width: 320px;
+}
+
+p,
+h1,
+h2,
+br,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 320px;
+  margin: 0 auto;
+}
