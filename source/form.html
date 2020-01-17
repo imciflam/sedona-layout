@@ -8,32 +8,38 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <ul class="page-header__list">
-          <li class="page-header__item">
-            <a class="page-header__link" href="./index.html">Главная</a>
-            <button class="page-header__button--close"></button>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="./photo.html">Фото и видео</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="./form.html">Форма отзыва</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header--logo-wrapper">
-        <object
-          class="page-header__logo-image"
-          type="image/svg+xml"
-          data="img/logotyle-mobile.svg"
-        >
-          Your browser does not support SVG
-        </object>
-        <div class="page-header--burger-wrapper">
+      <nav class="main-header__nav main-nav">
+        <div class="main-nav__wrapper">
           <button class="page-header__button--burger"></button>
+          <ul class="page-header__list site-nav">
+            <li class="page-header__item page-header__item--logo">
+              <a class="page-header__item-link page-header__item--logo-link">
+                <object
+                  class="page-header__logo-image"
+                  type="image/svg+xml"
+                  data="img/logotyle-mobile.svg"
+                >
+                  Your browser does not support SVG
+                </object></a
+              >
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="./index.html">Главная</a>
+              <button class="page-header__button--close"></button>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="./photo.html">Фото и видео</a>
+            </li>
+            <li class="page-header__item site-nav__item--hidden"></li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="./index.html">Информация</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
     <main class="form">
       <section class="form-preview">
@@ -247,9 +253,10 @@
               >
                 <path
                   d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7z"
-                /></svg
-            ></a>
-            <span class="visually-hidden">Facebook</span>
+                />
+              </svg>
+              <span class="visually-hidden">Facebook</span></a
+            >
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#"
@@ -268,6 +275,7 @@
           </li>
         </ul>
       </div>
+      <p class="main-footer_title">made in 2020</p>
     </footer>
   </body>
 </html>
