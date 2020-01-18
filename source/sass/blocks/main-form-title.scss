@@ -1,0 +1,18 @@
+.main-form-title {
+  @include form-title;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .main-form-title.visited-sights-block__title {
+    width: 100%;
+  }
+}

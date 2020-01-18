@@ -2,12 +2,6 @@
   background-color: #ffffff;
 }
 
-.main-form-title {
-  @include form-title;
-  line-height: 1.5;
-  margin: 0 auto;
-}
-
 .contact-block__item {
   padding: 0 20px 20px 20px;
   text-align: left;
@@ -37,13 +31,6 @@
     order: 3;
     flex-grow: 1;
     margin: 0 5%;
-  }
-
-  .main-form__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
   }
 
   .contact-block.main-form-title {
