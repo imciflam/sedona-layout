@@ -76,6 +76,17 @@ polygon {
   fill: #ffffff;
 }
 
+.button {
+  &:hover {
+    background-color: $baby-blue-hover;
+  }
+
+  &:active {
+    background-color: $baby-blue-down;
+    color: $baby-blue;
+  }
+}
+
 @media (min-width: $tablet-width) {
   hr {
     display: none;
