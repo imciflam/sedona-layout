@@ -22,17 +22,18 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: "";
-
   position: absolute;
-  top: 15px;
-  left: 17px;
+  content: "";
+  height: 5px;
+  width: 26px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 9px 0 0 white, 0 18px 0 0 white;
+}
 
-  width: 36px;
-  height: 2px;
-
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+.main-nav--no-js .main-nav__toggle {
+  display: none;
 }
 
 .main-nav--opened .main-nav__toggle::before {
