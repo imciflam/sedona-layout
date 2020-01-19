@@ -18,22 +18,16 @@
 
   &:hover {
     background-color: $baby-blue-hover;
+    fill: #ffffff;
   }
 
   &:active {
     background-color: $baby-blue-down;
+    fill: $baby-blue;
   }
 }
 
 .social__link svg {
   height: 100%;
   fill: #ffffff;
-
-  &:hover {
-    fill: #ffffff;
-  }
-
-  &:active {
-    fill: $baby-blue;
-  }
 }
