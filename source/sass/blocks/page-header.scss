@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.page-header__item {
+.main-nav__item {
   background-color: $baby-blue;
   color: #ffffff;
   text-align: center;
@@ -23,7 +23,7 @@
   width: 320px;
 }
 
-.page-header__logo-image {
+.main-nav__logo-image {
   position: absolute;
   left: 50%;
   top: 0;
@@ -31,7 +31,7 @@
   margin-left: -51px;
 }
 
-.page-header__item--logo-link {
+.main-nav__item--logo-link {
   position: absolute;
   display: block;
   width: 102px;
@@ -42,7 +42,7 @@
   background-color: transparent;
 }
 
-.page-header__item--logo {
+.main-nav__item--logo {
   position: relative;
   min-height: 57px;
   order: 1;
@@ -69,14 +69,14 @@
     min-height: 56px;
   }
 
-  .page-header__item {
+  .main-nav__item {
     background-color: #ffffff;
     color: #000000;
     border: 0;
     width: calc(100% / 5);
   }
 
-  .page-header__item--logo {
+  .main-nav__item--logo {
     position: absolute;
     top: 0;
     left: 50%;
