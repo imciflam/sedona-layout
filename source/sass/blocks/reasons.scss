@@ -26,12 +26,12 @@
   font-size: 14px;
 }
 
-.reason__item {
+.reasons__item {
   background-color: #eeeeee;
   line-height: 2;
 }
 
-.reason__item:last-child {
+.reasons__item:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -43,7 +43,7 @@
   margin: 0;
 }
 
-.reason__number {
+.reasons__number {
   padding: 20px;
 }
 
@@ -126,7 +126,7 @@
   background-image: url("../img/white_copy.png");
 }
 
-.reason__slogan {
+.reasons__slogan {
   margin: 30px 0 15px;
   font-size: 18px;
   line-height: 1.4;
@@ -138,7 +138,7 @@
     display: none;
   }
 
-  .reason__point-wrapper {
+  .reasons__point-wrapper {
     display: flex;
     flex-direction: row;
   }
