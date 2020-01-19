@@ -33,10 +33,14 @@
   .advantages__item {
     display: flex;
     flex-direction: column;
-    padding-top: 135px;
+    padding-top: 100px;
     width: 220px;
     padding-left: 0;
     text-align: center;
+  }
+
+  .advantages__item--grey {
+    padding: 20px;
   }
 
   .advantages__item:last-child {
@@ -64,5 +68,14 @@
   .advantages__feature--souvenirs::before {
     width: 64px;
     height: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 380px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
   }
 }
