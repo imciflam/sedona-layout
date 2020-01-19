@@ -31,11 +31,38 @@
 
 @media (min-width: $tablet-width) {
   .advantages__item {
-    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 135px;
+    width: 220px;
+    padding-left: 0;
     text-align: center;
   }
 
   .advantages__item:last-child {
     padding-bottom: 0;
+  }
+
+  .advantages__feature::before {
+    top: -115px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .advantages__feature--housing::before {
+    width: 75px;
+    height: 72px;
+  }
+
+  .advantages__feature--food::before {
+    width: 77px;
+    height: 68px;
+  }
+
+  .advantages__feature--souvenirs::before {
+    width: 64px;
+    height: 75px;
   }
 }

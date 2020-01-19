@@ -131,15 +131,6 @@
     width: 75px;
     height: 72px;
   }
-
-  .advantages__item {
-    padding: 60px 50px;
-    text-align: center;
-  }
-
-  .advantages__item:last-child {
-    padding-bottom: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
