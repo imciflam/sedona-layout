@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 40px 0 10px 0;
+  padding: 40px 0;
   min-width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -9,7 +9,6 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
