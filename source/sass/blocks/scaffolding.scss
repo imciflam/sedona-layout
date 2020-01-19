@@ -72,6 +72,10 @@ hr {
   padding: 0;
 }
 
+polygon {
+  fill: #ffffff;
+}
+
 @media (min-width: $tablet-width) {
   hr {
     display: none;
