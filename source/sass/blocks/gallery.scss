@@ -71,12 +71,6 @@
     z-index: 2;
     background-color: $input-background;
   }
-
-  .gallery__likes {
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -114,5 +108,12 @@
     color: #ffffff;
     z-index: 2;
     width: 100%;
+  }
+
+  .gallery__likes {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 70px;
   }
 }
