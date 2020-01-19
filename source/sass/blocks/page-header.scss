@@ -18,6 +18,16 @@
   font-weight: bold;
 }
 
+.main-nav__item a[href] {
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.2);
+  }
+}
+
 .page-header--burger-wrapper {
   position: relative;
   width: 320px;
