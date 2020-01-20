@@ -26,12 +26,12 @@
   font-size: 14px;
 }
 
-.reason__item {
+.reasons__item {
   background-color: #eeeeee;
   line-height: 2;
 }
 
-.reason__item:last-child {
+.reasons__item:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -43,32 +43,26 @@
   margin: 0;
 }
 
-.reason__number {
+.reasons__number {
   padding: 20px;
 }
 
 .reasons__advantages-list {
   background-color: #ffffff;
   color: #000000;
+  padding: 25px 20px 20px;
+  text-align: left;
 }
 
 .reasons__advantages-list--grey {
   background-color: #eeeeee;
 }
 
-.advantages__item {
-  padding: 20px 70px 20px 40px;
-}
-
-.advantages__item:last-child {
-  padding-bottom: 40px;
-}
-
 .reasons__container--disabled {
   background-color: #eeeeee;
   color: black;
   text-align: center;
-  // padding: 40px 25px;
+  padding: 40px 25px;
 }
 
 .reasons__main-image {
@@ -89,13 +83,6 @@
   background-image: url("../img/photo-bridge@2x.jpg");
 }
 
-.reason__line-break {
-  border: 0;
-  height: 1px;
-  background-color: #d6d6d6;
-  margin: 0 10%;
-}
-
 .reasons__image-triangle {
   position: absolute;
   top: 0;
@@ -108,12 +95,19 @@
   background-image: url("../img/white_copy.png");
 }
 
+.reasons__slogan {
+  margin: 30px 0 15px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
 @media (min-width: $tablet-width) {
   .reasons__image-triangle {
     display: none;
   }
 
-  .reason__point-wrapper {
+  .reasons__point-wrapper {
     display: flex;
     flex-direction: row;
   }
@@ -133,18 +127,18 @@
     justify-content: space-between;
   }
 
-  .advantages__item {
-    padding: 60px 50px;
-    text-align: center;
-  }
-
-  .advantages__item:last-child {
-    padding-bottom: 0;
+  .reasons__features--home::before {
+    width: 75px;
+    height: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reasons__image-triangle {
     display: none;
+  }
+
+  .reasons__advantages-list {
+    padding-bottom: 40px;
   }
 }

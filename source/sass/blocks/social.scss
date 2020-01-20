@@ -15,6 +15,16 @@
   cursor: pointer;
   overflow: hidden;
   text-align: center;
+
+  &:hover {
+    background-color: $baby-blue-hover;
+    fill: #ffffff;
+  }
+
+  &:active {
+    background-color: $baby-blue-down;
+    fill: $baby-blue;
+  }
 }
 
 .social__link svg {

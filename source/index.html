@@ -9,14 +9,14 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <div class="main-nav__wrapper">
-            <button class="page-header__button--burger"></button>
-            <ul class="page-header__list site-nav">
-              <li class="page-header__item page-header__item--logo">
-                <a class="page-header__item-link page-header__item--logo-link">
+            <button class="main-nav__toggle"></button>
+            <ul class="main-nav__list site-nav">
+              <li class="main-nav__item main-nav__item--logo">
+                <a class="main-nav__item-link main-nav__item--logo-link">
                   <object
-                    class="page-header__logo-image"
+                    class="main-nav__logo-image"
                     type="image/svg+xml"
                     data="img/logotyle-mobile.svg"
                   >
@@ -24,21 +24,18 @@
                   </object></a
                 >
               </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./index.html">Главная</a>
-                <button class="page-header__button--close"></button>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Главная</a>
               </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./photo.html"
-                  >Фото и видео</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./photo.html">Фото и видео</a>
               </li>
-              <li class="page-header__item site-nav__item--hidden"></li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./form.html">Форма отзыва</a>
+              <li class="main-nav__item site-nav__item--hidden"></li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./form.html">Форма отзыва</a>
               </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./index.html">Информация</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html">Информация</a>
               </li>
             </ul>
           </div>
@@ -70,12 +67,12 @@
           </div>
           <ul class="reasons__list">
             <div class="reasons__image-triangle"></div>
-            <li class="reason__item">
-              <div class="reason__point-wrapper">
+            <li class="reasons__item">
+              <div class="reasons__point-wrapper">
                 <div class="reasons__container">
-                  <b class="reason__slogan">Настоящий городок</b>
-                  <p class="reason__number">- №1 -</p>
-                  <p class="reason_description">
+                  <b class="reasons__slogan">Настоящий городок</b>
+                  <p class="reasons__number">&mdash; №1 &mdash;</p>
+                  <p class="reasons__description">
                     Седона - не аттракцион для туристов, там течет своя жизнь
                   </p>
                 </div>
@@ -84,32 +81,40 @@
                 ></div>
               </div>
               <ul class="reasons__advantages-list">
-                <li class="advantages__item advantages__item--housing ">
-                  <h3 class="advantages__title">Жилье</h3>
+                <li class="advantages__item">
+                  <h3 class="advantages__feature advantages__feature--housing">
+                    Жилье
+                  </h3>
                   <p class="advantages__description">
                     Рекомендуем пожить в настоящем отеле, все как в кино!
                   </p>
                 </li>
-                <li class="advantages__item advantages__item--souvenirs ">
-                  <h3 class="advantages__title">Сувениры</h3>
+                <li class="advantages__item">
+                  <h3
+                    class="advantages__feature advantages__feature--souvenirs"
+                  >
+                    Сувениры
+                  </h3>
                   <p class="advantages__description">
                     Не только китайского, но и местного производства!
                   </p>
                 </li>
-                <li class="advantages__item advantages__item--food ">
-                  <h3 class="advantages__title">Еда</h3>
+                <li class="advantages__item">
+                  <h3 class="advantages__feature advantages__feature--food">
+                    Еда
+                  </h3>
                   <p class="advantages__description">
                     Всегда заказывайте фирменный бургер, и вы не разочаруетесь!
                   </p>
                 </li>
               </ul>
             </li>
-            <li class="reason__item">
-              <div class="reason__point-wrapper">
+            <li class="reasons__item">
+              <div class="reasons__point-wrapper">
                 <div class="reasons__container reasons__container--reverse">
-                  <b class="reason__slogan">Там есть мост дьявола</b>
-                  <p class="reason__number">- №2 -</p>
-                  <p class="reason_description">
+                  <b class="reasons__slogan">Там есть мост дьявола</b>
+                  <p class="reasons__number">&mdash; №2 &mdash;</p>
+                  <p class="reasons__description">
                     Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
@@ -118,33 +123,31 @@
                 ></div>
               </div>
             </li>
-            <li class="reason__item">
+            <li class="reasons__item">
               <ul class="reasons__advantages-list--grey">
-                <li class="advantages__item">
+                <li class="advantages__item advantages__item--grey">
                   <div class="reasons__container--disabled">
-                    <b class="reason__slogan">Небольшая площадь</b>
-                    <p class="reason__number">- №3 -</p>
-                    <p class="reason_description">
+                    <b class="reasons__slogan">Небольшая площадь</b>
+                    <p class="reasons__number">&mdash; №3 &mdash;</p>
+                    <p class="reasons__description">
                       Все интересные места находятся очень близко
                     </p>
                   </div>
-                  <hr class="reason__line-break" />
                 </li>
-                <li class="advantages__item">
+                <li class="advantages__item advantages__item--grey">
                   <div class="reasons__container--disabled">
-                    <b class="reason__slogan">Красивая дорога</b>
-                    <p class="reason__number">- №4 -</p>
-                    <p class="reason_description">
+                    <b class="reasons__slogan">Красивая дорога</b>
+                    <p class="reasons__number">&mdash; №4 &mdash;</p>
+                    <p class="reasons__description">
                       Ехать в Седону из Лас-Вегаса совсем не скучно!
                     </p>
                   </div>
-                  <hr class="reason__line-break" />
                 </li>
-                <li class="advantages__item">
+                <li class="advantages__item advantages__item--grey">
                   <div class="reasons__container--disabled">
-                    <b class="reason__slogan">Мало туристов</b>
-                    <p class="reason__number">- №5 -</p>
-                    <p class="reason_description">
+                    <b class="reasons__slogan">Мало туристов</b>
+                    <p class="reasons__number">&mdash; №5 &mdash;</p>
+                    <p class="reasons__description">
                       Большинство едет в Гранд-Каньон и толпится там
                     </p>
                   </div>
@@ -225,5 +228,19 @@
         <p class="main-footer_title">made in 2020</p>
       </footer>
     </div>
+    <script>
+      let navMain = document.querySelector(".main-nav");
+      let navButton = document.querySelector(".main-nav__toggle");
+      navMain.classList.remove("main-nav--no-js");
+      navButton.addEventListener("click", function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
   </body>
 </html>

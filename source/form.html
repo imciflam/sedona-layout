@@ -9,14 +9,14 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <div class="main-nav__wrapper">
-            <button class="page-header__button--burger"></button>
-            <ul class="page-header__list site-nav">
-              <li class="page-header__item page-header__item--logo">
-                <a class="page-header__item-link page-header__item--logo-link">
+            <button class="main-nav__toggle"></button>
+            <ul class="main-nav__list site-nav">
+              <li class="main-nav__item main-nav__item--logo">
+                <a class="main-nav__item-link main-nav__item--logo-link">
                   <object
-                    class="page-header__logo-image"
+                    class="main-nav__logo-image"
                     type="image/svg+xml"
                     data="img/logotyle-mobile.svg"
                   >
@@ -24,21 +24,18 @@
                   </object></a
                 >
               </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./index.html">Главная</a>
-                <button class="page-header__button--close"></button>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html">Главная</a>
               </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./photo.html"
-                  >Фото и видео</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./photo.html">Фото и видео</a>
               </li>
-              <li class="page-header__item site-nav__item--hidden"></li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./form.html">Форма отзыва</a>
+              <li class="main-nav__item site-nav__item--hidden"></li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Форма отзыва</a>
               </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="./index.html">Информация</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html">Информация</a>
               </li>
             </ul>
           </div>
@@ -286,5 +283,19 @@
         <p class="main-footer_title">made in 2020</p>
       </footer>
     </div>
+    <script>
+      let navMain = document.querySelector(".main-nav");
+      let navButton = document.querySelector(".main-nav__toggle");
+      navMain.classList.remove("main-nav--no-js");
+      navButton.addEventListener("click", function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
   </body>
 </html>
