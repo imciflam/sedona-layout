@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <div class="page-container">
+    <div class="page-container form">
       <header class="page-header">
         <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <div class="main-nav__wrapper">
@@ -15,14 +15,18 @@
             <ul class="main-nav__list site-nav">
               <li class="main-nav__item main-nav__item--logo">
                 <a class="main-nav__item-link main-nav__item--logo-link">
-                  <object
-                    class="main-nav__logo-image"
-                    type="image/svg+xml"
-                    data="img/logotyle-mobile.svg"
-                  >
-                    Your browser does not support SVG
-                  </object></a
-                >
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="img/content/logo-sedona-desktop.svg"
+                    />
+                    <img
+                      class="site-nav__item-logo"
+                      src="img/content/logo-sedona-tablet.svg"
+                      alt="Логотип Седона"
+                    />
+                  </picture>
+                </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="./index.html">Главная</a>
@@ -59,175 +63,200 @@
             </p>
           </div>
         </section>
-        <hr class="form__divider" />
-        <section class="main-form">
-          <h2 class="visually-hidden">Главная форма опроса</h2>
-          <div class="main-form__wrapper">
-            <section class="greeting-block">
-              <h2 class="main-form-title greeting-block__title">
-                Представьтесь
-              </h2>
-              <ul class="greeting-block__user-information-list">
-                <li class="greeting-block__user-information-item">
-                  <label class="greeting-block__data" for="greeting-block__name"
-                    >Имя*:</label
-                  >
-                  <input
-                    type="text"
-                    class="greeting__placeholder greeting-block__name"
-                    id="greeting-block__name"
-                    placeholder="Петр"
-                  />
-                </li>
-                <li class="greeting-block__user-information-item">
-                  <label
-                    class="greeting-block__data"
-                    for="greeting-block__surname"
-                    >Фамилия*:</label
-                  >
-                  <input
-                    type="text"
-                    class="greeting__placeholder greeting-block__surname"
-                    id="greeting-block__surname"
-                    placeholder="Иванов"
-                  />
-                </li>
-                <li class="greeting-block__user-information-item">
-                  <label
-                    class="greeting-block__data"
-                    for="greeting-block__family-name"
-                    >Отчество:</label
-                  >
-                  <input
-                    type="text"
-                    class="greeting__placeholder greeting-block__family-name"
-                    id="greeting-block__family-name"
-                    placeholder="Александрович"
-                  />
-                </li>
-              </ul>
-            </section>
-            <hr class="form__divider" />
-            <section class="contact-block">
-              <h2 class="contact-block main-form-title">
-                Контактная информация
-              </h2>
-              <ul class="contact-block__list">
-                <li class="contact-block__item">
-                  <label
-                    class="contact-block__input-label"
-                    for="contact-block__input--phone"
-                    >Контактный телефон*:</label
-                  >
-                  <input
-                    type="text"
-                    class="contact-block__input contact-block__input--phone"
-                    id="contact-block__input--phone"
-                    placeholder="Введите телефон"
-                  />
-                </li>
-                <li class="contact-block__item">
-                  <label
-                    class="contact-block__input-label"
-                    for="contact-block__input--email"
-                    >Электронная почта*:</label
-                  >
-                  <input
-                    type="text"
-                    class="contact-block__input contact-block__input--email"
-                    id="contact-block__input--email"
-                    placeholder="Введите e-mail"
-                  />
-                </li>
-              </ul>
-            </section>
+        <form class="form__main">
+          <hr class="form__divider" />
+          <section class="main-form">
+            <h2 class="visually-hidden">Главная форма опроса</h2>
+            <div class="main-form__wrapper">
+              <section class="greeting-block">
+                <h2 class="main-form-title greeting-block__title">
+                  Представьтесь
+                </h2>
+                <ul class="greeting-block__user-information-list">
+                  <li class="greeting-block__user-information-item">
+                    <label
+                      class="greeting-block__data"
+                      for="greeting-block__name"
+                      >Имя*:</label
+                    >
+                    <input
+                      type="text"
+                      class="greeting__placeholder greeting-block__name"
+                      id="greeting-block__name"
+                      placeholder="Петр"
+                    />
+                  </li>
+                  <li class="greeting-block__user-information-item">
+                    <label
+                      class="greeting-block__data"
+                      for="greeting-block__surname"
+                      >Фамилия*:</label
+                    >
+                    <input
+                      type="text"
+                      class="greeting__placeholder greeting-block__surname"
+                      id="greeting-block__surname"
+                      placeholder="Иванов"
+                    />
+                  </li>
+                  <li class="greeting-block__user-information-item">
+                    <label
+                      class="greeting-block__data"
+                      for="greeting-block__family-name"
+                      >Отчество:</label
+                    >
+                    <input
+                      type="text"
+                      class="greeting__placeholder greeting-block__family-name"
+                      id="greeting-block__family-name"
+                      placeholder="Александрович"
+                    />
+                  </li>
+                </ul>
+              </section>
+              <hr class="form__divider" />
+              <section class="contact-block">
+                <h2 class="contact-block__title main-form-title">
+                  Контактная информация
+                </h2>
+                <ul class="contact-block__list">
+                  <li class="contact-block__item">
+                    <label
+                      class="contact-block__input-label"
+                      for="contact-block__input--phone"
+                      >Контактный телефон*:</label
+                    >
+                    <input
+                      type="text"
+                      class="contact-block__input contact-block__input--phone"
+                      id="contact-block__input--phone"
+                      placeholder="Введите телефон"
+                    />
+                  </li>
+                  <li class="contact-block__item">
+                    <label
+                      class="contact-block__input-label"
+                      for="contact-block__input--email"
+                      >Электронная почта*:</label
+                    >
+                    <input
+                      type="text"
+                      class="contact-block__input contact-block__input--email"
+                      id="contact-block__input--email"
+                      placeholder="Введите e-mail"
+                    />
+                  </li>
+                </ul>
+              </section>
 
+              <hr class="form__divider" />
+              <section class="impression-block">
+                <h2 class="main-form-title   impression-block__title">
+                  Ваше общее впечатление
+                </h2>
+                <ul class="impression-block__list">
+                  <li class="impression-block__item">
+                    <input
+                      type="radio"
+                      class="impression__input impression-block__radio visually-hidden"
+                      value="positive"
+                      checked
+                    />
+                    <label class="impression__label" for="positively"
+                      >Скорее положительное</label
+                    >
+                  </li>
+                  <li class="impression-block__item">
+                    <input
+                      type="radio"
+                      class="impression__input impression-block__radio visually-hidden"
+                      value="negative"
+                    />
+                    <label class="impression__label" for="negatively"
+                      >Скорее отрицательное</label
+                    >
+                  </li>
+                  <li class="impression-block__item">
+                    <input
+                      type="radio"
+                      class="impression__input impression-block__radio visually-hidden"
+                      value="mixed"
+                    />
+                    <label class="impression__label" for="difficult"
+                      >Затрудняюсь ответить</label
+                    >
+                  </li>
+                </ul>
+              </section>
+            </div>
             <hr class="form__divider" />
-            <section class="impression-block">
-              <h2 class="main-form-title impression-block">
-                Ваше общее впечатление
+            <section class="visited-sights-block">
+              <h2 class="main-form-title visited-sights-block__title">
+                Посещенные достопримечательности:
               </h2>
-              <ul class="impression-block__list">
-                <li class="impression-block__item">
+              <ul class="visited-sights-block__list">
+                <li class="visited-sights-block__item">
                   <input
-                    type="radio"
-                    class="impression-block__radio"
-                    value="positive"
+                    type="checkbox"
+                    class="visited-sights-block__checkbox visually-hidden"
+                    value="devils-bridge"
                     checked
-                  />Скорее положительное<br />
+                  />
+                  <label class="visited-sights__label" for="devils-bridge"
+                    >Мост Дьявола</label
+                  >
                 </li>
-                <li class="impression-block__item">
+                <li class="visited-sights-block__item">
                   <input
-                    type="radio"
-                    class="impression-block__radio"
-                    value="negative"
-                  />Скорее отрицательное<br />
+                    type="checkbox"
+                    class="visited-sights-block__checkbox visually-hidden"
+                    value="bell-mountain"
+                    checked
+                  />
+                  <label class="visited-sights__label" for="bell-mountain"
+                    >Гора-Колокол</label
+                  >
                 </li>
-                <li class="impression-block__item">
+                <li class="visited-sights-block__item">
                   <input
-                    type="radio"
-                    class="impression-block__radio"
-                    value="mixed"
-                  />Затрудняюсь ответить<br />
+                    type="checkbox"
+                    class="visited-sights-block__checkbox visually-hidden"
+                    value="slide-park"
+                    checked
+                  />
+                  <label class="visited-sights__label" for="slide-park"
+                    >Слайд-Парк</label
+                  >
+                </li>
+                <li class="visited-sights-block__item">
+                  <input
+                    type="checkbox"
+                    class="visited-sights-block__checkbox visually-hidden"
+                    value="red-mountains"
+                  />
+                  <label class="visited-sights__label" for="red-mountains"
+                    >Красные скалы</label
+                  >
                 </li>
               </ul>
             </section>
-          </div>
-          <hr class="form__divider" />
-          <section class="visited-sights-block">
-            <h2 class="main-form-title visited-sights-block__title">
-              Посещенные достопримечательности:
-            </h2>
-            <ul class="visited-sights-block__list">
-              <li class="visited-sights-block__item">
-                <input
-                  type="checkbox"
-                  class="visited-sights-block__checkbox"
-                  value="devils-bridge"
-                  checked
-                />Мост Дьявола<br />
-              </li>
-              <li class="visited-sights-block__item">
-                <input
-                  type="checkbox"
-                  class="visited-sights-block__checkbox"
-                  value="bell-mountain"
-                  checked
-                />Гора-Колокол<br />
-              </li>
-              <li class="visited-sights-block__item">
-                <input
-                  type="checkbox"
-                  class="visited-sights-block__checkbox"
-                  value="slide-park"
-                  checked
-                />Слайд-Парк<br />
-              </li>
-              <li class="visited-sights-block__item">
-                <input
-                  type="checkbox"
-                  class="visited-sights-block__checkbox"
-                  value="red-mountains"
-                />Красные скалы<br />
-              </li>
-            </ul>
+            <hr class="form__divider" />
+            <section class="emotions-block">
+              <h2 class="main-form-title emotions-block__title">
+                Опишите свои эмоции
+              </h2>
+              <textarea
+                type="text"
+                class="emotions-block__input"
+                id="emotions-block__input"
+                placeholder="Опишите подробно все свои восторги"
+              ></textarea>
+            </section>
+            <div class="form__button-wrapper">
+              <button class="form__button button">Отправить отзыв</button>
+            </div>
           </section>
-          <hr class="form__divider" />
-          <section class="emotions-block">
-            <h2 class="main-form-title emotions-block__title">
-              Опишите свои эмоции
-            </h2>
-            <textarea
-              type="text"
-              class="emotions-block__input"
-              id="emotions-block__input"
-              placeholder="Опишите подробно все свои восторги"
-            ></textarea>
-          </section>
-          <div class="form__button-wrapper">
-            <button class="form__button button">Отправить отзыв</button>
-          </div>
-        </section>
+        </form>
       </main>
       <footer class="main-footer">
         <p class="main-footer_title">#vizitsedona</p>

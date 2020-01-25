@@ -16,3 +16,14 @@
 .contact__button {
   @include button-mixin;
 }
+
+.contact-block__title {
+  @include form-title;
+  padding: 10% 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-block__title {
+    padding: 0;
+  }
+}

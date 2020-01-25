@@ -15,14 +15,18 @@
             <ul class="main-nav__list site-nav">
               <li class="main-nav__item main-nav__item--logo">
                 <a class="main-nav__item-link main-nav__item--logo-link">
-                  <object
-                    class="main-nav__logo-image"
-                    type="image/svg+xml"
-                    data="img/logotyle-mobile.svg"
-                  >
-                    Your browser does not support SVG
-                  </object></a
-                >
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="img/content/logo-sedona-desktop.svg"
+                    />
+                    <img
+                      class="site-nav__item-logo"
+                      src="img/content/logo-sedona-tablet.svg"
+                      alt="Логотип Седона"
+                    />
+                  </picture>
+                </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="./index.html">Главная</a>
@@ -62,11 +66,28 @@
         <hr class="gallery__divider" />
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img
-              class="gallery__photo"
-              src="img/photo-1-desktop.jpg"
-              alt="Неродные просторы"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/content/photo-sunset-desktop@1x.jpg 1x,
+                  img/content/photo-sunset-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/photo-sunset-tablet@1x.jpg 1x,
+                  img/content/photo-sunset-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="gallery__photo"
+                src="img/content/photo-sunset-mobile@1x.jpg"
+                srcset="img/content/photo-sunset-mobile@2x.jpg 2x"
+                alt="Неродные просторы"
+              />
+            </picture>
             <div class="gallery__photo-description">
               <b class="gallery__photo-name">Неродные просторы</b>
               <p class="gallery__author">Автор фото: Борис</p>
@@ -91,13 +112,28 @@
           </li>
           <hr class="gallery__divider" />
           <li class="gallery__item">
-            <img
-              class="gallery__photo"
-              src="img/photo-2-desktop.jpg"
-              width="280"
-              height="280"
-              alt="Местная растительность"
-            />
+            <picture
+              ><source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/content/photo-cactus-desktop@1x.jpg 1x,
+                  img/content/photo-cactus-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/photo-cactus-tablet@1x.jpg 1x,
+                  img/content/photo-cactus-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="gallery__photo"
+                src="img/content/photo-cactus-mobile@1x.jpg"
+                srcset="img/content/photo-cactus-mobile@2x.jpg 2x"
+                alt="Местная растительность"
+              />
+            </picture>
             <div class="gallery__photo-description">
               <b class="gallery__photo-name">Местная растительность</b>
               <p class="gallery__author">Автор фото: Сергей</p>
@@ -122,13 +158,28 @@
           </li>
           <hr class="gallery__divider" />
           <li class="gallery__item">
-            <img
-              class="gallery__photo"
-              src="img/photo-3-desktop.jpg"
-              width="280"
-              height="280"
-              alt="Дорога на север"
-            />
+            <picture
+              ><source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/content/photo-roads-desktop@1x.jpg 1x,
+                  img/content/photo-roads-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/photo-roads-tablet@1x.jpg 1x,
+                  img/content/photo-roads-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="gallery__photo"
+                src="img/content/photo-roads-mobile@1x.jpg"
+                srcset="img/content/photo-roads-mobile@2x.jpg 2x"
+                alt="Дорога на север"
+              />
+            </picture>
             <div class="gallery__photo-description">
               <b class="gallery__photo-name">Дорога на север</b>
               <p class="gallery__author">Автор фото: Петр</p>
@@ -153,11 +204,24 @@
           </li>
           <hr class="gallery__divider" />
           <li class="gallery__item">
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                img/content/photo-bridge-desktop@1x.jpg 1x,
+                img/content/photo-bridge-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/content/photo-bridge-tablet@1x.jpg 1x,
+                img/content/photo-bridge-tablet@2x.jpg 2x
+              "
+            />
             <img
               class="gallery__photo"
-              src="img/photo-4-desktop.jpg"
-              width="280"
-              height="280"
+              src="img/content/photo-bridge-mobile@1x.jpg"
+              srcset="img/content/photo-bridge-mobile@2x.jpg 2x"
               alt="Мост дьявола"
             />
             <div class="gallery__photo-description">

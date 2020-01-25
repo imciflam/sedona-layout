@@ -15,14 +15,18 @@
             <ul class="main-nav__list site-nav">
               <li class="main-nav__item main-nav__item--logo">
                 <a class="main-nav__item-link main-nav__item--logo-link">
-                  <object
-                    class="main-nav__logo-image"
-                    type="image/svg+xml"
-                    data="img/logotyle-mobile.svg"
-                  >
-                    Your browser does not support SVG
-                  </object></a
-                >
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="img/content/logo-sedona-desktop.svg"
+                    />
+                    <img
+                      class="site-nav__item-logo"
+                      src="img/content/logo-sedona-tablet.svg"
+                      alt="Логотип Седона"
+                    />
+                  </picture>
+                </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link">Главная</a>
@@ -41,7 +45,6 @@
           </div>
         </nav>
       </header>
-
       <main class="page-main">
         <h1 class="visually-hidden">
           Главная страница туристического города "Седона"
@@ -50,7 +53,7 @@
           <div class="intro__logo-image">
             <img
               class="intro__logo-image-text"
-              src="img/text-index.png"
+              src="img/content/text_sedona_mobile.svg"
               alt="Welcome to Sedona"
             />
             <div class="intro__image-triangle"></div>
@@ -70,15 +73,38 @@
             <li class="reasons__item">
               <div class="reasons__point-wrapper">
                 <div class="reasons__container">
-                  <b class="reasons__slogan">Настоящий городок</b>
-                  <p class="reasons__number">&mdash; №1 &mdash;</p>
-                  <p class="reasons__description">
-                    Седона - не аттракцион для туристов, там течет своя жизнь
-                  </p>
+                  <div class="reasons__text-container">
+                    <b class="reasons__slogan">Настоящий городок</b>
+                    <p class="reasons__number">&mdash; №1 &mdash;</p>
+                    <p class="reasons__description">
+                      Седона - не аттракцион для туристов, там течет своя жизнь
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="reasons__main-image reasons__main-image--city"
-                ></div>
+                <div class="reasons__main-image reasons__main-image--city">
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        img/content/photo-city-desk@1x.jpg,
+                        img/content/main-city-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        img/content/photo-city@1x.jpg,
+                        img/content/main-city-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="reasons__photo"
+                      src="img/content/photo-city-mobile.jpg"
+                      alt="Фото Седона город"
+                      srcset="img/content/main-city-mobile@2x.jpg 2x"
+                    />
+                  </picture>
+                </div>
               </div>
               <ul class="reasons__advantages-list">
                 <li class="advantages__item">
@@ -112,15 +138,38 @@
             <li class="reasons__item">
               <div class="reasons__point-wrapper">
                 <div class="reasons__container reasons__container--reverse">
-                  <b class="reasons__slogan">Там есть мост дьявола</b>
-                  <p class="reasons__number">&mdash; №2 &mdash;</p>
-                  <p class="reasons__description">
-                    Да, по нему можно пройти! Если вы осмелитесь, конечно
-                  </p>
+                  <div class="reasons__text-container">
+                    <b class="reasons__slogan">Там есть мост дьявола</b>
+                    <p class="reasons__number">&mdash; №2 &mdash;</p>
+                    <p class="reasons__description">
+                      Да, по нему можно пройти! Если вы осмелитесь, конечно
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="reasons__main-image reasons__main-image--bridge"
-                ></div>
+                <div class="reasons__main-image">
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        img/content/photo-bridge-desk@1x.jpg,
+                        img/content/main-bridge-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        img/content/photo-tablet-bridge@1x.jpg 1x,
+                        img/content/main-bridge-tablet@2x.jpg  2x
+                      "
+                    />
+                    <img
+                      class="reasons__photo"
+                      src="img/content/photo-bridge@1x.jpg"
+                      alt="Мост дьявола"
+                      srcset="img/content/main-bridge-mobile@2x.jpg 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="reasons__item">
@@ -159,7 +208,7 @@
         <section class="contact">
           <h2 class="contact__title">Заинтересовались?</h2>
           <p class="contact__description">
-            Укажите предполагаемые даты поездни, и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <button class="contact__button button">Найти гостиницу</button>

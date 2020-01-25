@@ -43,8 +43,6 @@
 .main-nav__item--logo-link {
   position: absolute;
   display: block;
-  width: 102px;
-  height: 85px;
   padding: 0;
   left: 50%;
   margin-left: -51px;
@@ -136,7 +134,6 @@
 
   .main-nav__list {
     width: 100%;
-    // for net
     min-height: 56px;
     z-index: 2;
     position: relative;
@@ -189,5 +186,9 @@
   .main-nav__wrapper {
     width: 1040px;
     margin: 0 auto;
+  }
+
+  .main-nav__item--logo-link {
+    margin-left: -93px;
   }
 }

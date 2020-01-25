@@ -7,7 +7,7 @@
   width: 100%;
   min-width: 320px;
   max-width: 1200px;
-  background-image: url("../img/intro-triangle.png");
+  background-image: url("../img/decorative/intro-triangle.png");
   background-size: cover;
   background-position: center;
 }
@@ -16,7 +16,6 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  min-width: 300px;
 }
 
 @mixin button-mixin {

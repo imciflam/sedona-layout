@@ -2,11 +2,11 @@
 
 .intro__logo-image {
   position: relative;
-  background-image: url("../img/back-tablet.jpg");
+  background-image: url("../img/content/back-mobile.jpg");
   min-width: 320px;
-  width: 100%;
   height: 389px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .intro__logo-image-text {
@@ -27,7 +27,7 @@
 @media (min-width: $tablet-width) {
   .intro__logo-image {
     position: relative;
-    background-image: url("../img/back-tablet.jpg");
+    background-image: url("../img/content/back-tablet.jpg");
     width: auto;
     height: 510px;
   }
@@ -47,7 +47,7 @@
 @media (min-width: $desktop-width) {
   .intro__logo-image {
     position: relative;
-    background-image: url("../img/back-desktop.jpg");
+    background-image: url("../img/content/back-desktop.jpg");
     width: auto;
     height: 520px;
   }

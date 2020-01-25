@@ -4,15 +4,27 @@
   margin: 0 auto;
 }
 
+.visited-sights-block__title {
+  padding: 10% 0;
+}
+
 @media (min-width: $tablet-width) {
   .main-form__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .main-form {
+    padding: 0 20px;
   }
 
   .main-form-title.visited-sights-block__title {
     width: 100%;
+  }
+
+  .visited-sights-block__title {
+    padding: 0;
   }
 }
