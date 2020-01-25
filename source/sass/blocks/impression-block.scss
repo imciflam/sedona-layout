@@ -59,6 +59,7 @@
 
 .impression-block__title {
   @include form-title;
+  padding: 10% 0;
 }
 
 @media (min-width: $tablet-width) {

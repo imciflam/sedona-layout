@@ -4,6 +4,7 @@
 
 .greeting-block__title {
   @include form-title;
+  padding: 10% 0;
 }
 
 .greeting-block__user-information-list {
