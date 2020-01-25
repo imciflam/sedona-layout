@@ -1,4 +1,4 @@
-.emotions-block {
+.emotions-block__title {
   background-color: #ffffff;
   padding-top: 10%;
 }
@@ -11,4 +11,10 @@
   font-weight: bold;
   font-family: "PT Sans", serif;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .emotions-block__title {
+    padding: 0;
+  }
 }

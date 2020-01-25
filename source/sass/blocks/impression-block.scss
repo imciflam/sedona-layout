@@ -70,6 +70,10 @@
   .impression-block__list {
     padding: 0 0 20px 80px;
   }
+
+  .impression-block__title {
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
