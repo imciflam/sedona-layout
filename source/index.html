@@ -15,14 +15,18 @@
             <ul class="main-nav__list site-nav">
               <li class="main-nav__item main-nav__item--logo">
                 <a class="main-nav__item-link main-nav__item--logo-link">
-                  <object
-                    class="main-nav__logo-image"
-                    type="image/svg+xml"
-                    data="img/decorative/logotyle-mobile.svg"
-                  >
-                    Your browser does not support SVG
-                  </object></a
-                >
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="img/content/logo-sedona-desktop.svg"
+                    />
+                    <img
+                      class="site-nav__item-logo"
+                      src="img/content/logo-sedona-tablet.svg"
+                      alt="Логотип Седона"
+                    />
+                  </picture>
+                </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link">Главная</a>
