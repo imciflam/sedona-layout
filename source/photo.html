@@ -66,11 +66,28 @@
         <hr class="gallery__divider" />
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img
-              class="gallery__photo"
-              src="img/photo-1-desktop.jpg"
-              alt="Неродные просторы"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/content/photo-sunset-desktop@1x.jpg 1x,
+                  img/content/photo-sunset-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/photo-sunset-tablet@1x.jpg 1x,
+                  img/content/photo-sunset-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="photo-card__img"
+                src="img/content/photo-sunset-mobile@1x.jpg"
+                srcset="img/content/photo-sunset-mobile@2x.jpg 2x"
+                alt="Неродные просторы"
+              />
+            </picture>
             <div class="gallery__photo-description">
               <b class="gallery__photo-name">Неродные просторы</b>
               <p class="gallery__author">Автор фото: Борис</p>
