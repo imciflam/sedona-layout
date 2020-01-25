@@ -74,11 +74,13 @@
             <li class="reasons__item">
               <div class="reasons__point-wrapper">
                 <div class="reasons__container">
-                  <b class="reasons__slogan">Настоящий городок</b>
-                  <p class="reasons__number">&mdash; №1 &mdash;</p>
-                  <p class="reasons__description">
-                    Седона - не аттракцион для туристов, там течет своя жизнь
-                  </p>
+                  <div class="reasons__text-container">
+                    <b class="reasons__slogan">Настоящий городок</b>
+                    <p class="reasons__number">&mdash; №1 &mdash;</p>
+                    <p class="reasons__description">
+                      Седона - не аттракцион для туристов, там течет своя жизнь
+                    </p>
+                  </div>
                 </div>
                 <div class="reasons__main-image reasons__main-image--city">
                   <picture>
@@ -137,15 +139,38 @@
             <li class="reasons__item">
               <div class="reasons__point-wrapper">
                 <div class="reasons__container reasons__container--reverse">
-                  <b class="reasons__slogan">Там есть мост дьявола</b>
-                  <p class="reasons__number">&mdash; №2 &mdash;</p>
-                  <p class="reasons__description">
-                    Да, по нему можно пройти! Если вы осмелитесь, конечно
-                  </p>
+                  <div class="reasons__text-container">
+                    <b class="reasons__slogan">Там есть мост дьявола</b>
+                    <p class="reasons__number">&mdash; №2 &mdash;</p>
+                    <p class="reasons__description">
+                      Да, по нему можно пройти! Если вы осмелитесь, конечно
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="reasons__main-image reasons__main-image--bridge"
-                ></div>
+                <div class="reasons__main-image">
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        img/content/photo-bridge-desk@1x.jpg,
+                        img/content/main-bridge-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        img/content/photo-tablet-bridge@1x.jpg 1x,
+                        img/content/main-bridge-tablet@2x.jpg  2x
+                      "
+                    />
+                    <img
+                      class="reasons__photo"
+                      src="img/content/photo-bridge@1x.jpg"
+                      alt="Мост дьявола"
+                      srcset="img/content/main-bridge-mobile@2x.jpg 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="reasons__item">
