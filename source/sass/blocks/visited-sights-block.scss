@@ -4,7 +4,7 @@
 }
 
 .visited-sights-block__list {
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px 100px;
 }
 
 .visited-sights-block__item {
@@ -13,8 +13,51 @@
   font-family: "PT Sans", serif;
 }
 
+.visited-sights__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  font-weight: 700;
+  color: #000000;
+  user-select: none;
+}
+
+.visited-sights-block__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -15px;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.visited-sights-block__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -62px;
+  width: 24px;
+  height: 16px;
+  background: url("../img/icons/icon-tick.svg") no-repeat center;
+  background-size: 24px 16px;
+  z-index: 1;
+}
+
 @media (min-width: $tablet-width) {
   .visited-sights-block {
-    width: 80%;
+    width: 75%;
+  }
+
+  .visited-sights__list {
+    padding: 0 0 20px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visited-sights__list {
+    padding: 0 20px 20px 80px;
   }
 }

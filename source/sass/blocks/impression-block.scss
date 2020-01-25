@@ -3,18 +3,76 @@
 }
 
 .impression-block__list {
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px 100px;
 }
 
 .impression-block__item {
   padding: 20px 0;
   font-weight: bold;
   font-family: "PT Sans", serif;
+  box-sizing: border-box;
+}
+
+.impression-block__radio + label::before {
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -76px;
+  }
+}
+
+.impression__input + label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -15px;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+}
+
+.impression__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  font-weight: 700;
+  color: #000000;
+  user-select: none;
+}
+
+.impression-block__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -61px;
+  width: 21px;
+  height: 21px;
+  background-color: #333333;
+  z-index: 1;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -58px;
+  }
+}
+
+.impression-block__title {
+  @include form-title;
 }
 
 @media (min-width: $tablet-width) {
   .impression-block {
-    width: 40%;
     order: 1;
+  }
+
+  .impression-block__list {
+    padding: 0 0 20px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression-block__list {
+    padding: 0 20px 20px 80px;
   }
 }
