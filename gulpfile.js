@@ -12,6 +12,8 @@ var posthtml = require("gulp-posthtml");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
+const ghPages = require("gh-pages");
+const path = require("path");
 
 gulp.task("images", function() {
   return gulp
@@ -81,6 +83,11 @@ gulp.task("server", function() {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), "./build"), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("start", gulp.series("css", "server"));
 gulp.task("serve", gulp.series("clean", "copy", "images", "styles", "html"));
