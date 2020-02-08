@@ -85,7 +85,7 @@ gulp.task("server", function() {
 });
 
 function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), "./build"), cb);
+  ghPages.publish(path.join(process.cwd(), "./build"), cb); // from which folder to build
 }
 exports.deploy = deploy;
 
