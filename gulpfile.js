@@ -15,7 +15,7 @@ var rename = require("gulp-rename");
 
 gulp.task("images", function() {
   return gulp
-    .src("source/img/**")
+    .src("build/img/**")
     .pipe(
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
@@ -38,7 +38,7 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("css", function() {
+gulp.task("styles", function() {
   return gulp
     .src("source/sass/style.scss")
     .pipe(plumber())
@@ -48,6 +48,18 @@ gulp.task("css", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
+});
+
+gulp.task("css", function() {
+  return gulp
+    .src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("html", function() {
@@ -71,3 +83,4 @@ gulp.task("server", function() {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+gulp.task("serve", gulp.series("clean", "copy", "images", "styles", "html"));
